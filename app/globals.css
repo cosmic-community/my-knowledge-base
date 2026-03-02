@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-gray-50 text-gray-900 antialiased;
+  }
+}
+
+@layer components {
+  .prose-kb h1 {
+    @apply text-3xl font-bold text-gray-900 mb-4;
+  }
+  .prose-kb h2 {
+    @apply text-2xl font-bold text-gray-900 mt-8 mb-3;
+  }
+  .prose-kb h3 {
+    @apply text-xl font-semibold text-gray-800 mt-6 mb-2;
+  }
+  .prose-kb p {
+    @apply text-gray-700 leading-relaxed mb-4;
+  }
+  .prose-kb ul {
+    @apply list-disc pl-6 mb-4 space-y-1 text-gray-700;
+  }
+  .prose-kb ol {
+    @apply list-decimal pl-6 mb-4 space-y-1 text-gray-700;
+  }
+  .prose-kb a {
+    @apply text-indigo-600 hover:text-indigo-800 underline;
+  }
+  .prose-kb blockquote {
+    @apply border-l-4 border-indigo-300 pl-4 italic text-gray-600 my-4;
+  }
+  .prose-kb code {
+    @apply bg-gray-100 text-indigo-700 px-1.5 py-0.5 rounded text-sm font-mono;
+  }
+  .prose-kb pre {
+    @apply bg-gray-900 text-gray-100 p-4 rounded-lg overflow-x-auto mb-4;
+  }
+  .prose-kb pre code {
+    @apply bg-transparent text-gray-100 px-0 py-0;
+  }
+  .prose-kb img {
+    @apply rounded-lg my-4;
+  }
+}
